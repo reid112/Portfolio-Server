@@ -5,6 +5,7 @@ const router = express.Router();
 // POST - Used to send an email
 router.post("/", async (req, res) => {
   try {
+    console.log(req.body)
     const contactInfo = {
         name: req.body.name,
         email: req.body.email,
