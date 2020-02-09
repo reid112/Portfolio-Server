@@ -5,7 +5,6 @@ const router = express.Router();
 // POST - Used to send an email
 router.post("/", async (req, res) => {
   try {
-    console.log(req.body)
     const contactInfo = {
         name: req.body.name,
         email: req.body.email,
@@ -13,7 +12,7 @@ router.post("/", async (req, res) => {
         message: req.body.message
     }
 
-    sendEmail(createEmail(contactInfo));
+    await sendEmail(createEmail(contactInfo));
 
     res.json({success : "Success", status : 200});
   } catch (e) {
@@ -31,7 +30,7 @@ function createEmail({ name, email, subject, message }) {
     `;
 
     return Object.freeze({
-        from: '"RJReid Contact" <contact@rjreid.ca>',
+        from: 'RJReid Contact <contact@rjreid.ca>',
         to: process.env.EMAIL_TO,
         subject: `RJReid Contact Form - ${subject}`,
         html: emailText
