@@ -51,7 +51,7 @@ const info = {
       {
         id: 1,
         title: "Fantasy Football Calculator",
-        subtitle: "Android app to join mock fantasy drafts.",
+        subtitle: "This is currently in the Play Store! It is an Android app that allows users to join mock fantasy drafts. It provides most of the features found on the FantasyFootballCalculator.com website.  There is also ain app purchases and the app is profitable. Unfortunately, the code is in a private repo so the code cannot be shared, however I have learned a lot from this project and I can answer any questions you have!",
         imageUrl: "/images/ffc-main.png",
         largeImageUrl: [
           "/images/ffc-1.webp",
@@ -66,7 +66,7 @@ const info = {
       {
         id: 2,
         title: "Twitter Client",
-        subtitle: "A simple android twitter clone.",
+        subtitle: "A simple android twitter clone. This was a code test that I did to get my current job at Trov.  It is very simple and uses 100% fake data but it fulfilled all of the requirments that were outlined in the coding test.",
         imageUrl: "/images/twitter-main.png",
         largeImageUrl: [
           "/images/twitter-1.png",
@@ -74,6 +74,18 @@ const info = {
           "/images/twitter-3.png"
         ],
         url: 'https://github.com/reid112/TwitterClient'
+      },
+      {
+        id: 3,
+        title: "BrittaniAndRiley.com",
+        subtitle: "A website for my wedding on Dec 31, 2020. There is a login page so that I can log in to manage invites and see who has RSVP'd.  For every invite, a record is stored in the mongo database with a guid.  This is used to generate a personalized invite page for every guest.",
+        imageUrl: "/images/wedding-main.png",
+        largeImageUrl: [
+          "/images/wedding-1.jpg",
+          "/images/wedding-2.png",
+          "/images/wedding-3.png"
+        ],
+        url: 'https://github.com/reid112/Wedding'
       }
     ],
     experience: {
